@@ -1,0 +1,33 @@
+/* 1. Centrado total del contenedor */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfafa;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* 2. La caja negra cuadrada */
+.caja-centrada {
+  border: 3px solid black;
+  padding: 30px;
+  max-width: 1000px;
+  background-color: white;
+  /* Esto asegura que la caja no se vea "mordida" por el borde */
+  box-sizing: border-box;
+}
+
+/* 3. Estética de los textos */
+h1,
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6; /* Mejora la lectura */
+  text-align: justify;
+}
