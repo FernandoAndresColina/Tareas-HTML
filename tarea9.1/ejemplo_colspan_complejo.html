@@ -2,10 +2,13 @@
 <html lang="es">
   <head>
     <!-- Título para el navegador y los buscadores -->
-    <title>Clase 7</title>
+    <title>Clase 9 - Texto en HTML</title>
 
     <!-- Descripción de la página para los buscadores -->
-    <meta name="description" content="Página de ejemplos vistos en clase" />
+    <meta
+      name="description"
+      content="Página de ejemplos vistos en la clase 9: Texto en HTML"
+    />
 
     <!-- Palabras clave para los buscadores -->
     <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
@@ -25,30 +28,39 @@
     <!-- Para algunos navegadores móviles -->
     <meta name="theme-color" content="#1e7bbf" />
   </head>
+
   <body>
     <header>
-      <h1>Ejemplos vistos en la Clase 9</h1>
+      <h1>Ejemplos vistos en la Clase 9: Tablas en HTML</h1>
+      <p><a href="index.html">👈 Volver atrás</a></p>
       <hr />
     </header>
 
-    <nav>
-      <h3>Ejemplos Sencillos</h3>
-      <ul>
-        <li>
-          <a href="ejemplo_colspan_sencillo.html">Tabla colspan sencilla</a>
-        </li>
-        <li>
-          <a href="ejemplo_colspan_complejo.html">Tabla colspan complejo</a>
-        </li>
-        <li>
-          <a href="ejemplo_rowspan_sencillo.html">Tabla rowspan sencilla 1</a>
-        </li>
-      </ul>
-      <hr />
-      <h3>Tareas</h3>
-    </nav>
+    <main>
+      <h1>Ejemplo colspan complejo</h1>
+      <table border="1">
+        <tr>
+          <td colspan="3">A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td colspan="2">D</td>
+          <td>E</td>
+        </tr>
+        <tr>
+          <td colspan="4">F</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+        </tr>
+      </table>
+    </main>
 
     <hr />
-    <footer>© Tu nombre o empresa 2026 - Todos los derechos reservados</footer>
+    <footer>© ConquerBlocks 2023 - Todos los derechos reservados</footer>
   </body>
 </html>
