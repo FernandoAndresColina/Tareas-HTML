@@ -2,10 +2,13 @@
 <html lang="es">
   <head>
     <!-- Título para el navegador y los buscadores -->
-    <title>Clase 10</title>
+    <title>Clase 10 - Formularios en HTML</title>
 
     <!-- Descripción de la página para los buscadores -->
-    <meta name="description" content="Página de ejemplos vistos en clase" />
+    <meta
+      name="description"
+      content="Página de ejemplos vistos en la clase 10: Formularios en HTML"
+    />
 
     <!-- Palabras clave para los buscadores -->
     <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
@@ -25,30 +28,36 @@
     <!-- Para algunos navegadores móviles -->
     <meta name="theme-color" content="#1e7bbf" />
   </head>
+
   <body>
     <header>
-      <h1>Ejemplos vistos en la Clase 10 - 11</h1>
+      <h1>Ejemplos vistos en la Clase 11: Formularos en HTML</h1>
+      <p><a href="index.html">👈 Volver atrás</a></p>
       <hr />
     </header>
+    <main>
+      <h1>Ejemplo de checkbox</h1>
 
-    <nav>
-      <h2>Ejemplos de Formularios I</h3>
-      <ul>
-        <li>
-          <a href="formulario_sencillo.html">Formulario sencillo</a>
-        </li>
-        <li>
-          <a href="formulario_google.html">Formulario Google</a>
-        </li>
-      </ul>
-      <hr>
-      <h2>Ejemplos de Formularios II</h2>
-      <ul>
-        <li><a href="resto_inputs.html">Tipos de inputs restantes</a></li>
-        <li><a href="checkbox.html">Input checkbox</a></li>
-      </ul>
-    </nav>
+      <form action="#" method="get">
 
+        <p>Seleccione los ingredientes de su pizza</p>
+      
+        <div>
+          <p>
+            <input type="checkbox" name="tomate" /> Tomate
+          </p>
+          <p>
+            <input type="checkbox" name="queso" /> Queso
+          </p>
+          <p>
+            <input type="checkbox" name="peperoni" /> Peperoni
+          </p>
+        </div>
+
+        <button>Enviar</button>
+
+      </form>
+    </main>
     <hr />
     <footer>© Tu nombre o empresa 2026 - Todos los derechos reservados</footer>
   </body>
