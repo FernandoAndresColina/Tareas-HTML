@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 15 - Ejemplos de atributos</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Tarea 15" />
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="Fernando Luque Colina" />
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Codificación-->
+    <meta charset="UTF-8" />
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.css"
+    />
+
+    <style>
+      .ck-editor__editable {
+        min-height: 200px; /* Para que sea fácil hacer clic y escribir */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ejemplo de elemento</h1>
+      <p><a href="index.html">👈 Volver atrás</a></p>
+      <hr />
+    </header>
+
+    <main>
+      <h2>Ejemplo de Ckeditor</h2>
+      <p>Descripción</p>
+      <textarea id="editor"></textarea>
+    </main>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+
+    <script>
+      ClassicEditor.create(document.querySelector("#editor"), {
+        // En esta versión no necesitas importar plugins uno a uno, ya vienen dentro
+        toolbar: [
+          "heading",
+          "|",
+          "bold",
+          "italic",
+          "link",
+          "bulletedList",
+          "numberedList",
+          "blockQuote",
+          "undo",
+          "redo",
+        ],
+      })
+        .then((editor) => {
+          console.log("¡Editor listo para usar!");
+        })
+        .catch((error) => {
+          console.error("Error al cargar:", error);
+        });
+    </script>
+
+    <hr />
+    <footer>
+      © Fernando Luque Colina 2026 - Todos los derechos reservados
+    </footer>
+  </body>
+</html>
