@@ -34,7 +34,10 @@
     </header>
     <main>
       <h2>Ejemplo de atributo Dialog</h2>
-      <dialog open="">
+      <button onClick="document.getElementById('dialogo1').open = true">
+        Abrir Dialogo
+      </button>
+      <dialog id="dialogo1">
         <section>
           <h2>Seccion 1</h2>
 
@@ -54,6 +57,11 @@
             and scrambled it to make a type specimen book.
           </p>
         </section>
+        <p>
+          <button onClick="document.getElementById('dialogo1').close()">
+            Cerrar
+          </button>
+        </p>
       </dialog>
     </main>
     <hr />
